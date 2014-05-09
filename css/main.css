@@ -521,12 +521,83 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: "brandon-grotesque", helvetica, arial, sans-serif; }
+
 /* ==========================================================================
    layouts
    ========================================================================== */
+.l-main-header-wrapper {
+  width: 100%;
+  min-width: 1052px;
+  height: 494px;
+  margin: 0 0 20px;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.l-main-header {
+  position: relative;
+  width: 1052px;
+  height: 494px;
+  margin: 0 auto;
+  outline: 1px solid red; }
+
+.l-container {
+  width: 1052px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: 1px solid purple; }
+
+.l-sidebar {
+  width: 256px;
+  outline: 1px solid blue;
+  min-height: 30em;
+  float: left; }
+
+.l-main-content {
+  width: 755px;
+  outline: 1px solid orange;
+  min-height: 40em;
+  float: right; }
+
+.l-int-nav {
+  padding: 0;
+  margin: 0 0 14px;
+  list-style: none; }
+  .l-int-nav li {
+    margin-bottom: 6px; }
+
 /* ==========================================================================
    modules
    ========================================================================== */
+.page-id-23 .l-main-header-wrapper {
+  background-image: url(../img/events_and_tours_heady.jpg); }
+
+.page-id-21 .l-main-header-wrapper {
+  background-image: url(../img/legend_heady.jpg); }
+
+.page-id-19 .l-main-header-wrapper {
+  background-image: url(../img/beers_heady.jpg); }
+
+.page-id-25 .l-main-header-wrapper {
+  background-image: url(../img/submit_your_song_heady.jpg); }
+
+.int-nav-item {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  background: #b08458;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none; }
+  .int-nav-item:hover {
+    color: #000; }
+
 /* ==========================================================================
    utils
    ========================================================================== */

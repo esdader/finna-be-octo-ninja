@@ -1,0 +1,22 @@
+// --------------------------- //
+// section interior nav
+// --------------------------- //
+
+.int-nav-item {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    background: $color-tan;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: $body-bold;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    &:hover {
+        color: #000;
+    }
+}

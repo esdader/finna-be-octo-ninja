@@ -6,14 +6,21 @@
  * Dimensions
  */
 
+$site-width: 1052;
+$site-outside-gutters: 10;
+
 /**
  * colors
  */
-
+$color-tan: #b08458;
 
 /**
  * fonts 
  */
+$body-font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+$body-bold: 500;
+$body-regular: 400;
+
 
 /**
  * Some defautls
@@ -23,4 +30,9 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box; 
+}
+
+
+body {
+    font-family: $body-font-family;
 }
