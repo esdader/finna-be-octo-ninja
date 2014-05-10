@@ -566,19 +566,15 @@ body {
   position: relative;
   width: 1052px;
   height: 494px;
-  margin: 0 auto;
-  outline: 1px solid red; }
+  margin: 0 auto; }
 
 .l-container {
   width: 1052px;
   padding: 0 10px;
-  margin: 0 auto;
-  outline: 1px solid purple; }
+  margin: 0 auto; }
 
 .l-sidebar {
   width: 256px;
-  outline: 1px solid blue;
-  min-height: 30em;
   float: left; }
 
 .l-main-content {
