@@ -1,0 +1,41 @@
+// --------------------------- //
+// sidebar panel
+// --------------------------- //
+
+
+// --------------------------- //
+// background color changes
+
+// events and tours
+.page-id-23 .l-sidebar-panel {
+    background: $color-dark-green;
+}
+
+// the legend
+.page-id-21 .l-sidebar-panel {
+    background: $color-tan;
+}
+
+// the beers
+.page-id-19 .l-sidebar-panel {
+    background: $color-tan;
+}
+
+// submit your song
+.page-id-25 .l-sidebar-panel {
+    background: $color-tan;
+}
+
+// end background color changes
+// --------------------------- //
+
+
+.sidebar-panel-heady {
+	margin: 0;
+	padding: 20px 0 14px;
+	color: #fff;
+	font: normal normal normal 40px/1 $heading-family-alt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+}
