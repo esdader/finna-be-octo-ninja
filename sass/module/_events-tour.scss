@@ -1,0 +1,124 @@
+// --------------------------- //
+// events and tour
+// --------------------------- //
+
+.int-panel,
+.int-panel-intro,
+.events-tour-panel,
+.events-tour-intro {
+	position: relative;
+	margin-bottom: 1em;
+	background: $color-light-green;
+
+	header {
+		h1 {
+			margin-bottom: .75em;
+			font-size: 32px;
+			line-height: 1;
+			text-align: center;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 23px;
+		color: #fff;
+	}
+}
+
+.int-panel-intro.submit-song-panel {
+	background-color: #6c2850;
+}
+
+.explain-song-panel-lyrics {
+	background-color: #481a35;
+}
+
+.submit-song-panel-lyrics {
+	background-color: #6c2850;
+}
+
+.the-legend-panel {
+	background-color: #74959c;
+}
+
+.the-legend-panel.int-panel-intro h1 span {
+	color: #92bdc6;
+}
+
+.merch-panel {
+	background-color: #b1c7db;
+
+	p {
+		color: #000;
+	}
+}
+
+.int-panel:before,
+.events-tour-panel:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 47px;
+	position: absolute;
+	top: -33px;
+	left: 0;
+	z-index: 99;
+	background: url(../img/panel_arrow.png) no-repeat center center;
+}
+
+.int-panel-tag,
+.events-tour-tag {
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+
+// starter lyrics
+.starter-lyrics-intro {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1em;
+}
+
+.starter-lyrics-section {
+	padding-top: 2em;
+}
+
+.starter-lyrics {
+	padding-bottom: 1em;
+	margin-bottom: 1.75em;
+	background: url(../img/pick_icon.png) no-repeat center bottom;
+}
+
+.starter-lyrics p {
+	font-size: 14px;
+	line-height: 23px;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-weight: normal;
+	margin-bottom: 2em;
+	color: #fffefe;
+	text-align: center;
+}
+
+
+.form-submission {
+
+	margin-top: 2em;
+	
+	h1 {
+		margin-bottom: .75em;
+		font-size: 24px;
+		line-height: 1;	
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}

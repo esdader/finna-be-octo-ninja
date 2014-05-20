@@ -13,17 +13,38 @@
 
 // the legend
 .page-id-21 .l-sidebar-panel {
-    background: $color-tan;
+    background: #50757a;
+}
+
+.page-id-21 .location-panel {
+	background: #233c53;
+}
+
+// merch
+.page-id-27 .l-sidebar-panel {
+    background: #50757a;
+}
+
+.page-id-27 .location-panel {
+	background: #b1c7db;
 }
 
 // the beers
 .page-id-19 .l-sidebar-panel {
-    background: $color-tan;
+    background: #c48203;
+}
+
+.page-id-19 .location-panel {
+	background-color: #fab201;
 }
 
 // submit your song
-.page-id-25 .l-sidebar-panel {
-    background: $color-tan;
+.page-id-25 .sign-up-panel {
+    background: #481a35;
+}
+
+.page-id-25 .location-panel {
+    background: #6c2850;
 }
 
 // end background color changes
@@ -38,4 +59,46 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.location-panel {
+	
+	.l-sidebar-panel-body {
+		padding-top: 1em;
+
+		p {
+			margin-bottom: 2em;
+			font-size: 13px;
+			line-height: 20px;
+
+			a {
+				color: #000;
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		h4 {
+			font-family: $heading-family;
+			font-size: 14px;
+			margin-bottom: .25em;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+
+	}
+}
+
+.sidebar-maps-heady {
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 14px;
+	font-family: $heading-family;
+	text-transform: uppercase;
+	margin-top: 1em;
+	letter-spacing: 1px;
 }

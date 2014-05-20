@@ -16,12 +16,14 @@ $color-tan: #b08458;
 $color-dark-green: #738d46;
 $color-light-green: #90b058;
 $color-rollover: #000;
+$color-beer-border-color: #c8c7c7;
+
 
 
 /**
  * fonts 
  */
-$body-family: helvetica, arial, sans-serif;
+$body-family: Helvetica, Arial, sans-serif;
 $body-family-alt: "brandon-grotesque", helvetica, arial, sans-serif; 
 $heading-family: "brandon-grotesque", helvetica, arial, sans-serif;
 $heading-family-bold: 500;
@@ -42,4 +44,17 @@ $heading-family-alt: "Prohibition-Regular", helvetica, arial, sans-serif;
 
 body {
     font-family: $body-family;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-family;
 }

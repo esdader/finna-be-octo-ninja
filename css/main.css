@@ -142,27 +142,27 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0 0 0.67em; }
 
 h2 {
   font-size: 1.5em;
-  margin: 0.83em 0; }
+  margin: 0 0 0.83em; }
 
 h3 {
   font-size: 1.17em;
-  margin: 1em 0; }
+  margin: 0 0 1em; }
 
 h4 {
   font-size: 1em;
-  margin: 1.33em 0; }
+  margin: 0 0 1.33em; }
 
 h5 {
   font-size: 0.83em;
-  margin: 1.67em 0; }
+  margin: 0 0 1.67em; }
 
 h6 {
   font-size: 0.67em;
-  margin: 2.33em 0; }
+  margin: 0 0 2.33em; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -207,7 +207,7 @@ mark {
  */
 p,
 pre {
-  margin: 1em 0; }
+  margin: 0 0 1em; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -549,7 +549,18 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  font-family: helvetica, arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "brandon-grotesque", helvetica, arial, sans-serif; }
 
 /* ==========================================================================
    layouts
@@ -570,7 +581,7 @@ body {
 
 .l-container {
   width: 1052px;
-  padding: 0 10px;
+  padding: 0 10px 2em;
   margin: 0 auto; }
 
 .l-sidebar {
@@ -579,7 +590,6 @@ body {
 
 .l-main-content {
   width: 755px;
-  outline: 1px solid orange;
   min-height: 40em;
   float: right; }
 
@@ -595,12 +605,59 @@ body {
   margin: 0 0 26px 0;
   background: #b08458; }
 
+.l-sidebar-panel.location-panel {
+  margin-bottom: 0; }
+
 .l-sidebar-panel-header {
   border-bottom: 1px solid #fff; }
+
+.l-sidebar-panel-maps-header {
+  border-top: 1px solid #fff; }
+
+.l-int-panel {
+  padding: 36px 62px; }
+
+.main-logo {
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  margin-left: -132px; }
+
+.l-main-nav {
+  width: 256px;
+  padding-top: 80px; }
+
+.l-home-container {
+  width: 100%;
+  min-width: 1070px;
+  height: 1300px;
+  background: url(../img/home_bg.jpg) no-repeat center top; }
+
+.l-home-inner-container {
+  position: relative;
+  width: 1070px;
+  height: 1300px;
+  margin: 0 auto; }
 
 /* ==========================================================================
    modules
    ========================================================================== */
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .main-nav li {
+    text-align: center;
+    margin-bottom: 1.25em; }
+  .main-nav a {
+    padding: 4px 0;
+    color: #fff;
+    font: normal normal 500 18px/1.4 "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .main-nav a:hover {
+      color: #90b058; }
+
 .page-id-23 .l-main-header-wrapper {
   background-image: url(../img/events_and_tours_heady.jpg); }
 
@@ -612,6 +669,9 @@ body {
 
 .page-id-25 .l-main-header-wrapper {
   background-image: url(../img/submit_your_song_heady.jpg); }
+
+.page-id-27 .l-main-header-wrapper {
+  background-image: url(../img/merch_heady.jpg); }
 
 .int-nav-item {
   display: block;
@@ -634,13 +694,28 @@ body {
   background: #738d46; }
 
 .page-id-21 .l-sidebar-panel {
-  background: #b08458; }
+  background: #50757a; }
+
+.page-id-21 .location-panel {
+  background: #233c53; }
+
+.page-id-27 .l-sidebar-panel {
+  background: #50757a; }
+
+.page-id-27 .location-panel {
+  background: #b1c7db; }
 
 .page-id-19 .l-sidebar-panel {
-  background: #b08458; }
+  background: #c48203; }
 
-.page-id-25 .l-sidebar-panel {
-  background: #b08458; }
+.page-id-19 .location-panel {
+  background-color: #fab201; }
+
+.page-id-25 .sign-up-panel {
+  background: #481a35; }
+
+.page-id-25 .location-panel {
+  background: #6c2850; }
 
 .sidebar-panel-heady {
   margin: 0;
@@ -650,6 +725,33 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center; }
+
+.location-panel .l-sidebar-panel-body {
+  padding-top: 1em; }
+  .location-panel .l-sidebar-panel-body p {
+    margin-bottom: 2em;
+    font-size: 13px;
+    line-height: 20px; }
+    .location-panel .l-sidebar-panel-body p a {
+      color: #000;
+      text-decoration: none; }
+      .location-panel .l-sidebar-panel-body p a:hover {
+        text-decoration: underline; }
+  .location-panel .l-sidebar-panel-body h4 {
+    font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+    color: #fff; }
+
+.sidebar-maps-heady {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  margin-top: 1em;
+  letter-spacing: 1px; }
 
 .btn {
   display: block;
@@ -682,6 +784,397 @@ body {
     height: 18px;
     background: #738d46 url(../img/right_btn_arrow.png) no-repeat left top;
     content: " "; }
+
+#mc_embed_signup {
+  padding: 1em 0 0;
+  font-size: 14px; }
+
+#mc_embed_signup label {
+  display: block;
+  margin-bottom: .75em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.1; }
+
+#mce-EMAIL {
+  width: 100%;
+  padding: 0 6px;
+  border: none;
+  line-height: 1.6; }
+
+#mc-embedded-subscribe {
+  display: block;
+  width: 100%;
+  height: 18px;
+  margin: 1.5em 0 0;
+  padding: 0;
+  background-color: #90b058;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px; }
+  #mc-embedded-subscribe:hover {
+    color: #738d46; }
+  #mc-embedded-subscribe:before {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 18px;
+    background: #738d46 url(../img/left_btn_arrow.png) no-repeat left top;
+    content: " "; }
+  #mc-embedded-subscribe:after {
+    display: block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background: #738d46 url(../img/right_btn_arrow.png) no-repeat left top;
+    content: " "; }
+
+.page-id-19 #mc-embedded-subscribe {
+  background-color: #fff;
+  color: #fab201; }
+  .page-id-19 #mc-embedded-subscribe:hover {
+    color: #ccc; }
+
+.page-id-25 #mc-embedded-subscribe {
+  background-color: #6c2850;
+  color: #fff; }
+  .page-id-25 #mc-embedded-subscribe:hover {
+    color: #ccc; }
+
+.page-id-21 #mc-embedded-subscribe {
+  background-color: #fff;
+  color: #74959c; }
+  .page-id-21 #mc-embedded-subscribe:hover {
+    color: #50757a; }
+
+.page-id-27 #mc-embedded-subscribe {
+  background-color: #fff;
+  color: #50757a; }
+  .page-id-27 #mc-embedded-subscribe:hover {
+    color: #b1c7db; }
+
+.int-panel,
+.int-panel-intro,
+.events-tour-panel,
+.events-tour-intro {
+  position: relative;
+  margin-bottom: 1em;
+  background: #90b058; }
+  .int-panel header h1,
+  .int-panel-intro header h1,
+  .events-tour-panel header h1,
+  .events-tour-intro header h1 {
+    margin-bottom: .75em;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .int-panel p,
+  .int-panel-intro p,
+  .events-tour-panel p,
+  .events-tour-intro p {
+    font-size: 14px;
+    line-height: 23px;
+    color: #fff; }
+
+.int-panel-intro.submit-song-panel {
+  background-color: #6c2850; }
+
+.explain-song-panel-lyrics {
+  background-color: #481a35; }
+
+.submit-song-panel-lyrics {
+  background-color: #6c2850; }
+
+.the-legend-panel {
+  background-color: #74959c; }
+
+.the-legend-panel.int-panel-intro h1 span {
+  color: #92bdc6; }
+
+.merch-panel {
+  background-color: #b1c7db; }
+  .merch-panel p {
+    color: #000; }
+
+.int-panel:before,
+.events-tour-panel:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 47px;
+  position: absolute;
+  top: -33px;
+  left: 0;
+  z-index: 99;
+  background: url(../img/panel_arrow.png) no-repeat center center; }
+
+.int-panel-tag,
+.events-tour-tag {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px; }
+
+.starter-lyrics-intro {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1em; }
+
+.starter-lyrics-section {
+  padding-top: 2em; }
+
+.starter-lyrics {
+  padding-bottom: 1em;
+  margin-bottom: 1.75em;
+  background: url(../img/pick_icon.png) no-repeat center bottom; }
+
+.starter-lyrics p {
+  font-size: 14px;
+  line-height: 23px;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin-bottom: 2em;
+  color: #fffefe;
+  text-align: center; }
+
+.form-submission {
+  margin-top: 2em; }
+  .form-submission h1 {
+    margin-bottom: .75em;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.beer-panel {
+  position: relative;
+  border-top: 1px solid #c8c7c7;
+  margin-bottom: 71px; }
+  .beer-panel:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    top: -61px;
+    left: 0;
+    z-index: 99;
+    background: url(../img/panel_arrow.png) no-repeat 251px center; }
+  .beer-panel:first-child:before {
+    content: none; }
+
+.beer-info {
+  float: left;
+  width: 348px;
+  padding-bottom: 6em;
+  border-right: 1px solid #c8c7c7;
+  margin-right: -1px; }
+
+.beer-main-image {
+  float: left;
+  width: 405px;
+  padding: 22px 0;
+  border-left: 1px solid #c8c7c7;
+  text-align: center; }
+
+.beer-title-con {
+  padding: 18px 8px 14px;
+  border-bottom: 1px solid #c8c7c7; }
+
+.beer-title-intro {
+  margin: 0;
+  font: normal normal 500 12px/1 "brandon-grotesque", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.beer-title {
+  margin: 4px 0 0;
+  font: normal normal normal 36px/1 "Prohibition-Regular", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.badge-con {
+  float: left;
+  width: 112px;
+  padding: 10px 0;
+  text-align: center; }
+
+.abv-con {
+  width: 228px;
+  float: left;
+  padding: 6px 0 6px 6px;
+  border-left: 1px solid #c8c7c7; }
+
+.abv-con-inner {
+  width: 100%;
+  background-color: #dedfe0;
+  padding: 8px 8px 8px 12px; }
+
+.abv-intro {
+  float: left;
+  margin: 0 8px 0 0;
+  font: normal normal 500 12px/78px "brandon-grotesque", helvetica, arial, sans-serif; }
+
+.abv {
+  float: left;
+  margin: 0;
+  font: normal normal normal 78px/78px "Prohibition-Regular", helvetica, arial, sans-serif;
+  color: #fff; }
+
+.beer-style {
+  padding: 12px 8px;
+  border-top: 1px solid #c8c7c7; }
+  .beer-style p {
+    margin: 0;
+    font: normal normal normal 18px/1.2 "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .beer-style h2 {
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    font: normal normal 500 12px/1.2 "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.beer-what-like {
+  padding: 12px 8px;
+  border-top: 1px solid #c8c7c7; }
+  .beer-what-like p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 16px; }
+  .beer-what-like h2 {
+    margin: 0 0 .3em 0;
+    display: block;
+    font-size: 12px;
+    font: normal normal 500 12px/1.2 "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.beer-tell-me-more {
+  padding: 12px 26px 12px 8px;
+  border-top: 1px solid #c8c7c7; }
+  .beer-tell-me-more p {
+    float: left;
+    margin: 0;
+    font-size: 11px;
+    line-height: 16px; }
+  .beer-tell-me-more h2 {
+    float: left;
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    font: normal normal 500 12px/1.2 "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.beer-musical-pairing {
+  clear: both;
+  padding: 6px 0;
+  border-top: 1px solid #c8c7c7;
+  border-bottom: 1px solid #c8c7c7; }
+
+.beer-musical-pairing-inner {
+  background: #dedfe0 url(../img/pick_icon.png) no-repeat 724px center;
+  padding: 12px 30px 12px 12px; }
+  .beer-musical-pairing-inner h2 {
+    margin: 0 12px 0 0;
+    font: normal normal 500 12px/16px "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left; }
+  .beer-musical-pairing-inner p {
+    margin: 0;
+    padding-top: 1px;
+    float: left;
+    font-size: 11px;
+    line-height: 16px; }
+
+.wpcf7-form label {
+  width: 164px;
+  float: left;
+  margin-right: 1em;
+  background: url(../img/form_arrows.png) no-repeat center right;
+  text-transform: uppercase;
+  font: normal normal normal 12px/1.6 "brandon-grotesque", helvetica, arial, sans-serif;
+  letter-spacing: 2px; }
+.wpcf7-form input {
+  width: 400px;
+  float: right;
+  padding-left: 4px;
+  padding-right: 4px; }
+.wpcf7-form p {
+  margin-bottom: 1.75em; }
+.wpcf7-form .wpcf7-submit {
+  display: block;
+  width: 210px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: #481a35;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px; }
+  .wpcf7-form .wpcf7-submit:hover {
+    color: #000; }
+  .wpcf7-form .wpcf7-submit:before {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 18px;
+    background: #6c2850 url(../img/left_btn_arrow.png) no-repeat left top;
+    content: " "; }
+  .wpcf7-form .wpcf7-submit:after {
+    display: block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background: #6c2850 url(../img/right_btn_arrow.png) no-repeat left top;
+    content: " "; }
+
+.l-homepage-nav {
+  position: absolute;
+  top: 678px;
+  left: 30px; }
+
+.homepage-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .homepage-nav li {
+    float: left;
+    margin-right: 44px; }
+    .homepage-nav li.last {
+      margin-right: 0; }
+  .homepage-nav a {
+    color: #fff;
+    font: normal normal 500 22px/42px "brandon-grotesque", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .homepage-nav a:hover {
+      text-decoration: underline; }
 
 /* ==========================================================================
    utils
@@ -727,15 +1220,16 @@ body {
 .invisible {
   visibility: hidden; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .wpcf7-form p:before,
+.clearfix:after,
+.wpcf7-form p:after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .wpcf7-form p:after {
   clear: both; }
 
-.clearfix {
+.clearfix, .wpcf7-form p {
   *zoom: 1; }
 
 /* ==========================================================================

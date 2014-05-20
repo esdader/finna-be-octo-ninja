@@ -1,3 +1,4 @@
+    </div> <?php // ends l-container ?>
     <?php wp_footer(); ?>
     
     <script>

@@ -1,0 +1,68 @@
+// starter lyrics form
+
+.wpcf7-form {
+	
+	label {
+		width: 164px;
+		float: left;
+		margin-right: 1em;
+		background: url(../img/form_arrows.png) no-repeat center right;
+		text-transform: uppercase;
+		font: normal normal normal 12px/ 1.6 $heading-family;
+		letter-spacing: 2px;
+	}
+
+	input {
+		width: 400px;
+		float: right;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+	p {
+		@extend .clearfix;
+		margin-bottom: 1.75em;
+	}
+
+	.wpcf7-submit {
+		display: block;
+		width: 210px;
+		height: 18px;
+		margin: 0;
+		padding: 0;
+		background-color: #481a35;
+		text-align: center;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 2px;
+		font-family: $body-family-alt;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 3px;
+
+		&:hover {
+			color: #000;
+		}
+
+		&:before {
+			display: block;
+			float: left;
+			width: 19px;
+			height: 18px;
+			background: #6c2850 url(../img/left_btn_arrow.png) no-repeat left top;
+			content: " ";
+		}
+
+		&:after {
+			display: block;
+			float: right;
+			width: 18px;
+			height: 18px;
+			background: #6c2850 url(../img/right_btn_arrow.png) no-repeat left top;
+			content: " ";
+		}
+	}
+
+}

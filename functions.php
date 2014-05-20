@@ -13,6 +13,15 @@ function starter_theme_scripts() {
 		array(),
 		'1.0'
 	);
+
+	// mail chimp stylesheet
+	wp_enqueue_style( 
+		'main', 
+		get_template_directory_uri() . '//cdn-images.mailchimp.com/embedcode/slim-081711.css',
+		array(),
+		'1.0'
+	);
+
 	
 	// modernizr
 	wp_enqueue_script(

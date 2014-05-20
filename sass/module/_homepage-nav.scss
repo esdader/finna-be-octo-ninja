@@ -1,0 +1,33 @@
+// homepage nav
+
+.l-homepage-nav {
+	position: absolute;
+	top: 678px;
+	left: 30px;
+}
+
+.homepage-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		float: left;
+		margin-right: 44px;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		color: #fff;
+		font: normal normal $heading-family-bold 22px/42px $heading-family;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

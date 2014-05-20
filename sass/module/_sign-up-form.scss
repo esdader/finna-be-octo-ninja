@@ -1,0 +1,99 @@
+#mc_embed_signup {
+	padding: 1em 0 0;
+	font-size: 14px;
+}
+
+#mc_embed_signup label {
+	display: block;
+	margin-bottom: .75em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.1;
+}
+
+#mce-EMAIL {
+	width: 100%;
+	padding: 0 6px;
+	border: none;
+	line-height: 1.6;
+}
+
+
+#mc-embedded-subscribe {
+	display: block;
+	width: 100%;
+	height: 18px;
+	margin: 1.5em 0 0;
+	padding: 0;
+	background-color: $color-light-green;
+	text-align: center;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	font-family: $body-family-alt;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 3px;
+
+	&:hover {
+		color: $color-dark-green;
+	}
+
+	&:before {
+		display: block;
+		float: left;
+		width: 19px;
+		height: 18px;
+		background: $color-dark-green url(../img/left_btn_arrow.png) no-repeat left top;
+		content: " ";
+	}
+
+	&:after {
+		display: block;
+		float: right;
+		width: 18px;
+		height: 18px;
+		background: $color-dark-green url(../img/right_btn_arrow.png) no-repeat left top;
+		content: " ";
+	}
+}
+
+.page-id-19 #mc-embedded-subscribe {
+	background-color: #fff;
+	color: #fab201;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+
+.page-id-25 #mc-embedded-subscribe {
+	background-color: #6c2850;
+	color: #fff;
+
+	&:hover {
+		color: #ccc;
+	}
+}
+
+.page-id-21 #mc-embedded-subscribe {
+	background-color: #fff;
+	color: #74959c;
+
+	&:hover {
+		color: #50757a;
+	}
+}
+
+
+.page-id-27 #mc-embedded-subscribe {
+	background-color: #fff;
+	color: #50757a;
+
+	&:hover {
+		color: #b1c7db;
+	}
+}

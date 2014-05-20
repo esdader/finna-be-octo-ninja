@@ -14,10 +14,11 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="l-main-header-wrapper">
-	    <header class="l-main-header">
-	        <nav class="l-main-nav">
-	            <ul class="main-nav">
+    
+    <div class="l-home-container">
+    	<div class="l-home-inner-container">
+    		<nav class="l-homepage-nav">
+    			<ul class="homepage-nav">
 	                <li>
 	                    <a href="<?php echo get_page_link(19); ?>">
 	                        <?php echo get_the_title(19); ?>
@@ -38,14 +39,23 @@
 	                        <?php echo get_the_title(25); ?>
 	                    </a>
 	                </li>
-	                <li>
+	                <li class="last">
 	                    <a href="<?php echo get_page_link(27); ?>">
 	                        <?php echo get_the_title(27); ?>
 	                    </a>
 	                </li>
 	            </ul>
-	        </nav>
-	        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="South Austin Brewery" class="main-logo" /></a>
-	    </header>    
-	</div>
-	<div class="l-container clearfix">
+    		</nav>
+    	</div>
+    </div>
+
+    <?php wp_footer(); ?>
+    
+    <script>
+        // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        // g.src='//www.google-analytics.com/ga.js';
+        // s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>

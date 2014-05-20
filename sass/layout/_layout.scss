@@ -20,7 +20,7 @@
 
 .l-container {
     width: 1052px;
-    padding: 0 10px;
+    padding: 0 10px 2em;
     margin: 0 auto;
 }
 
@@ -31,7 +31,6 @@
 
 .l-main-content {
     width: 755px;
-    outline: 1px solid orange;
     min-height: 40em;
     float: right;
 }
@@ -52,6 +51,44 @@
     background: $color-tan;
 }
 
+.l-sidebar-panel.location-panel {
+    margin-bottom: 0;
+}
+
 .l-sidebar-panel-header {
     border-bottom: 1px solid #fff;
+}
+
+.l-sidebar-panel-maps-header {
+    border-top: 1px solid #fff;
+}
+
+.l-int-panel {
+    padding: 36px 62px;
+}
+
+.main-logo {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    margin-left: -132px;
+}
+
+.l-main-nav {
+    width: 256px;
+    padding-top: 80px;
+}
+
+.l-home-container {
+    width: 100%;
+    min-width: 1070px;
+    height: 1300px;
+    background: url(../img/home_bg.jpg) no-repeat center top;
+}
+
+.l-home-inner-container {
+    position: relative;
+    width: 1070px;
+    height: 1300px;
+    margin: 0 auto;
 }
