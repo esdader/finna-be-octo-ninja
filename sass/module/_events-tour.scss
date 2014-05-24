@@ -26,6 +26,15 @@
 		font-size: 14px;
 		line-height: 23px;
 		color: #fff;
+		letter-spacing: 1px;
+	}
+
+	a {
+		letter-spacing: 1px;
+	}
+
+	li {
+		letter-spacing: 1px;
 	}
 }
 
@@ -51,10 +60,6 @@
 
 .merch-panel {
 	background-color: #b1c7db;
-
-	p {
-		color: #000;
-	}
 }
 
 .int-panel:before,
@@ -121,4 +126,10 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	}
+}
+
+.bully {
+	font-size: 18px;
+	padding-left: 8px;
+	padding-right: 8px;
 }

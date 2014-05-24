@@ -4,10 +4,6 @@
 
 ?>
 
-<?php
-// events and tour
-?>
-
 <?php get_header(); ?>
 
     <div class="l-sidebar">
@@ -60,14 +56,14 @@
             			<div class="abv-con">
             				<div class="abv-con-inner clearfix">
             					<p class="abv-intro">
-            						ABVs:
+            						ABV:
             					</p>
             					<p class="abv">
 									<?php
 										if ( get_field('abv') ) {
 											the_field('abv');
 										}
-									?>
+									?><span class="small">%</span>
             					</p>
             				</div>
             			</div>

@@ -6,29 +6,30 @@
 
     <div class="l-sidebar">
         <ul class="l-int-nav">
-            <li><a href="#add-link" class="int-nav-item">Tour Info</a></li>
-            <li><a href="#add-link" class="int-nav-item">Upcoming</a></li>
+            <li><a href="#brewin-up-some-tunes" class="int-nav-item">Brewin' Up Some Tunes</a></li>
+            <li><a href="#starter-lyrics" class="int-nav-item">The Starter Lyruics</a></li>
+            <li><a href="#how-do-i-do-it" class="int-nav-item">How Do I Do It?</a></li>
         </ul>
 
         <?php get_template_part('location-panel' ); ?>
         
     <div class="l-main-content">
-        <article class="l-int-panel int-panel-intro submit-song-panel">
+        <article id="brewin-up-some-tunes"class="l-int-panel int-panel-intro submit-song-panel">
             <header>
                 <h1>BREWIN’ UP SOME TUNES</h1>
             </header>
             <section>
                 <h2 class="int-panel-tag">Here in Austin, music is in our blood.It’s also in our beer.</h2>
                 
-                <p>Liquid Austin Soul is more than just our brewery credo--it’s a stone cold pseudoscientific fact--carefully documented by a professionally unprofessional association of hop heads, groupies, audiophiles, and some dude who just walked by.  The tunes flow free around here, whatever we’re brewin’ or doin’.  And we want you to join the jam.  That’s right, we want you to write a song, man.  The more astute and less nearsighted among you may have noticed we print starter lyrics on every can and bottle.  Just take any of those lyrics and write yourself a song that uses ‘em.  Loud, funny, raunchy, poetic, profane, brief, long, punk, acapella…it’s up to you…all it’s gotta be is yours.</p>
+                <p>Liquid Austin Soul is more than just our brewery credo--it’s a stone cold pseudoscientific fact--carefully documented by a professionally unprofessional association of hop heads, groupies, audiophiles, and some dude who just walked by.  The tunes flow free around here, whatever we’re brewin’ or doin’.  And we want you to join the jam.  That’s right, we want you to write a song, man.  The more astute and less nearsighted among you may have noticed we print starter lyrics on every can.  Just take any of those lyrics and write yourself a song that uses ‘em.  Loud, funny, raunchy, poetic, profane, brief, long, punk, acapella…it’s up to you…all it’s gotta be is yours.</p>
             </section>
         </article>
-        <article class="l-int-panel int-panel explain-song-panel-lyrics">
+        <article id="starter-lyrics" class="l-int-panel int-panel explain-song-panel-lyrics">
             <header>
                 <h1>the starter lyrics</h1>
             </header>
             <section class="starter-lyrics-intro">
-                <p>As any good Austin hippie-half breed would, you may have already recycled all your bottles and cans. That’s cool. We’ve posted all the different starter lyrics for you right here. Proof that, at least on rare occasions, we do think ahead.</p>
+                <p>As any good Austin hippie-half breed would, you may have already recycled all your cans. That’s cool. We’ve posted all the different starter lyrics for you right here. Proof that, at least on rare occasions, we do think ahead.</p>
             </section>
             <section class="starter-lyrics-section">
             	<div class="starter-lyrics">
@@ -48,7 +49,7 @@
             	</div>
             </section>
         </article>
-        <article class="l-int-panel int-panel submit-song-panel-lyrics">
+        <article id="how-do-i-do-it" class="l-int-panel int-panel submit-song-panel-lyrics">
             <header>
                 <h1>Like, how do I do it, man?</h1>
             </header>

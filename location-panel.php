@@ -26,8 +26,8 @@
                 </h3>
             </header>
             <div class="l-sidebar-panel-body">
-                <h4>Location info:</h4>
-                <p>We are located at 415 East Saint Elmo, Unit 1D, Austin TX 78745. From downtown, go south on Congress past Ben White 71/290, turn left onto East Saint Elmo Road approximately 1/2 mile. The brewery is directly south, across the street from Music Lab studios. SABC also has an adjacent 6700-sq.ft. event space available for music, corporate events, weddings, you name it. Email us for details.</p>
+                <h4>info:</h4>
+                <p>We're hangin' out on East Saint Elmo in the ungentrified heart of South Austin. From downtown, go south on Congress past Ben White 71/290.  Turn left onto East Saint Elmo Road in about a 1/2 mile. The brewery is directly across the street from Music Lab studios. Look for the black A-frame sign on the right with white type that says "South Austin Brewery."  It's even got an arrow to point the way.  Easy as playin' chopsticks…</p>
 
                 <h4>ADDRESS:</h4>
                 <p>415 E St Elmo Rd<br>
@@ -46,6 +46,5 @@
                 </h3>
             </header>
         </div>
-        <iframe width="256" height="160" frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?q=South%20Austin%20Brewing%20Company%2C%20East%20Saint%20Elmo%20Road%2C%20Austin%2C%20TX%2C%20United%20States&key=AIzaSyChOdoNaAIMvcUuMZXabFk4KCljCxPsorc"></iframe>
+        <iframe width="256" height="160" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=415%20E%20St%20Elmo%20Rd%2C%20Austin%2C%20TX%2C%20United%20States&key=AIzaSyChOdoNaAIMvcUuMZXabFk4KCljCxPsorc"></iframe>
     </div>

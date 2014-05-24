@@ -662,7 +662,7 @@ h6 {
   background-image: url(../img/events_and_tours_heady.jpg); }
 
 .page-id-21 .l-main-header-wrapper {
-  background-image: url(../img/legend_heady.jpg); }
+  background-image: url(../img/source_heady.jpg); }
 
 .page-id-19 .l-main-header-wrapper {
   background-image: url(../img/beers_heady.jpg); }
@@ -731,17 +731,20 @@ h6 {
   .location-panel .l-sidebar-panel-body p {
     margin-bottom: 2em;
     font-size: 13px;
-    line-height: 20px; }
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: 1px; }
     .location-panel .l-sidebar-panel-body p a {
-      color: #000;
+      color: #fff;
       text-decoration: none; }
       .location-panel .l-sidebar-panel-body p a:hover {
         text-decoration: underline; }
   .location-panel .l-sidebar-panel-body h4 {
     font-family: "brandon-grotesque", helvetica, arial, sans-serif;
-    font-size: 14px;
-    margin-bottom: .25em;
+    font-size: 16px;
+    margin-bottom: .5em;
     text-transform: uppercase;
+    font-style: italic;
     color: #fff; }
 
 .sidebar-maps-heady {
@@ -885,7 +888,18 @@ h6 {
   .events-tour-intro p {
     font-size: 14px;
     line-height: 23px;
-    color: #fff; }
+    color: #fff;
+    letter-spacing: 1px; }
+  .int-panel a,
+  .int-panel-intro a,
+  .events-tour-panel a,
+  .events-tour-intro a {
+    letter-spacing: 1px; }
+  .int-panel li,
+  .int-panel-intro li,
+  .events-tour-panel li,
+  .events-tour-intro li {
+    letter-spacing: 1px; }
 
 .int-panel-intro.submit-song-panel {
   background-color: #6c2850; }
@@ -904,8 +918,6 @@ h6 {
 
 .merch-panel {
   background-color: #b1c7db; }
-  .merch-panel p {
-    color: #000; }
 
 .int-panel:before,
 .events-tour-panel:before {
@@ -959,6 +971,11 @@ h6 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px; }
+
+.bully {
+  font-size: 18px;
+  padding-left: 8px;
+  padding-right: 8px; }
 
 .beer-panel {
   position: relative;
@@ -1034,6 +1051,8 @@ h6 {
   margin: 0;
   font: normal normal normal 78px/78px "Prohibition-Regular", helvetica, arial, sans-serif;
   color: #fff; }
+  .abv .small {
+    font-size: 48px; }
 
 .beer-style {
   padding: 12px 8px;
