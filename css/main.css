@@ -977,6 +977,12 @@ h6 {
   padding-left: 8px;
   padding-right: 8px; }
 
+.merch-photo {
+  margin: 0 3px 9px;
+  max-width: 200px;
+  height: auto;
+  vertical-align: top; }
+
 .beer-panel {
   position: relative;
   border-top: 1px solid #c8c7c7;

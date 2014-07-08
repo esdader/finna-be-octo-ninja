@@ -27,5 +27,19 @@
                 <p>Click on “Events &amp; Tours” for upcoming events and see when your next chance is to score some.</p>
             </section>
         </article>
+        <article id="buy-lil-mojo" class="l-int-panel int-panel merch-panel">
+            <section>
+                <p>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/balck_T_2.jpg" alt="" class="merch-photo" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/baseball_T_2.jpg" alt="" class="merch-photo" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/baseball_T_3.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/hat_2.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/hat_3.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/ringer.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/ringer2.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/glass.jpg" alt="" class="merch-photo" />
+                </p>
+            </section>
+        </article>
     </div>    
 <?php get_footer(); ?>

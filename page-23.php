@@ -58,6 +58,8 @@
             </header>
             <section>
                 <p>So you’re having a little get together. Or maybe you’re having a big get together. Make it memorable and get your collective brew on, South Austin style. Featuring a uniquely funky Austin industrial vibe and fresh craft beers straight from the source—this ain’t your typical birthday-corporate shindig-wedding reception-ground hog day-album release party-leap year celebration. As a true working brewery, dates are limited and fill up fast. Call for details and book your event today. Or tomorrow. (We’re mellow like that.)</p>
+                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/event1.jpg" alt="" /></p>
+                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/event2.jpg" alt="" /></p>
             </section>
         </article>
     </div>    
