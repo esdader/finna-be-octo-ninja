@@ -22,7 +22,7 @@
 		}
 	}
 
-	p {
+	p, ul {
 		font-size: 14px;
 		line-height: 23px;
 		color: #fff;
@@ -132,4 +132,26 @@
 	font-size: 18px;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+
+.stores-list {
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+
+		&:before {
+			content: '\2022';
+			padding-right: 8px;
+			padding-left: 8px;
+			font-size: 18px;
+		}
+
+		&:first-child:before {
+			content: none;
+		}
+	}
 }
