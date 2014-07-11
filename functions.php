@@ -107,4 +107,15 @@ if ( function_exists( 'add_theme_support' ) ) {
 // }
 
 
+/**
+ * Returns a dashed version of phrase
+ */
+
+function generate_handle ($str) 
+{
+	$str = preg_replace('/[^a-z0-9]+/i','-',
+	   iconv('UTF-8','ASCII//TRANSLIT',$str));
+	return strtolower( trim($str,'-') );
+}
+
 ?>

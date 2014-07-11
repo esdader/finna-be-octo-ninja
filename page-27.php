@@ -6,13 +6,25 @@
 
     <div class="l-sidebar">
         <ul class="l-int-nav">
-            <li><a href="#buy-li-mojo" class="int-nav-item">Buy A Lil' Mojo</a></li>
+            <?php
+                if ( get_field('intro_nav_text') ) {
+                    $link_txt = get_field('intro_nav_text');
+                    $handle = generate_handle( $link_txt );
+
+                } elseif ( get_field('intro_heading') ) {
+                    $link_txt = get_field('intro_heading');
+                    $handle = generate_handle( $link_txt );
+                }
+
+                if ( isset($link_txt) ) : ?>
+                    <li><a href="#<?php echo $handle; ?>" class="int-nav-item"><?php echo $link_txt; ?></a></li>
+                <?php endif; ?>
         </ul>
 
         <?php get_template_part('location-panel' ); ?>
         
     <div class="l-main-content">
-        <article id="buy-lil-mojo" class="l-int-panel int-panel-intro merch-panel">
+        <article<?php if ( isset($handle) ) echo " id='{$handle}'"; ?>class="l-int-panel int-panel-intro merch-panel">
             <header><?php
                 if ( get_field('intro_heading') ) : ?>
                     <h1><?php echo the_field('intro_heading'); ?></h1>

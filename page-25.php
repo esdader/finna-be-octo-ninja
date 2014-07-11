@@ -6,7 +6,19 @@
 
     <div class="l-sidebar">
         <ul class="l-int-nav">
-            <li><a href="#brewin-up-some-tunes" class="int-nav-item">Brewin' Up Some Tunes</a></li>
+            <?php
+                if ( get_field('intro_nav_text') ) {
+                    $link_txt = get_field('intro_nav_text');
+                    $handle = generate_handle( $link_txt );
+
+                } elseif ( get_field('intro_heading') ) {
+                    $link_txt = get_field('intro_heading');
+                    $handle = generate_handle( $link_txt );
+                }
+
+                if ( isset($link_txt) ) : ?>
+                    <li><a href="#<?php echo $handle; ?>" class="int-nav-item"><?php echo $link_txt; ?></a></li>
+                <?php endif; ?>
             <li><a href="#starter-lyrics" class="int-nav-item">The Starter Lyruics</a></li>
             <li><a href="#how-do-i-do-it" class="int-nav-item">How Do I Do It?</a></li>
         </ul>
@@ -14,7 +26,7 @@
         <?php get_template_part('location-panel' ); ?>
         
     <div class="l-main-content">
-        <article id="brewin-up-some-tunes"class="l-int-panel int-panel-intro submit-song-panel">
+        <article<?php if ( isset($handle) ) echo " id='{$handle}'"; ?>class="l-int-panel int-panel-intro submit-song-panel">
             <header><?php
                 if ( get_field('intro_heading') ) : ?>
                     <h1><?php echo the_field('intro_heading'); ?></h1>
