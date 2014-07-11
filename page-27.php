@@ -13,18 +13,18 @@
         
     <div class="l-main-content">
         <article id="buy-lil-mojo" class="l-int-panel int-panel-intro merch-panel">
-            <header>
-                <h1>Buy a Lil’ Mojo</h1>
+            <header><?php
+                if ( get_field('intro_heading') ) : ?>
+                    <h1><?php echo the_field('intro_heading'); ?></h1>
+                <?php endif; ?>
             </header>
-            <section>
-                <h2 class="int-panel-tag">Let your freak flag fly.  on your bod, on your head, on your favorite pint glass.</h2>
-                
-                <p>Capture the cosmic moment. Show craft freak pride. Step up and order some South Austin Brewery swag today</p>
-                <p>Capture the cosmic moment. Show craft freak pride. Step up and get your South Austin Brewery swag today.</p>
-
-                <p>Just like a band rolling through town in the glorious bygone days before internet and “on demand” everything, these threads are only available at real live shows in our taproom. So if you want it, come and get it.</p>
-
-                <p>Click on “Events &amp; Tours” for upcoming events and see when your next chance is to score some.</p>
+            <section><?php
+                if ( get_field('intro_subheading') ) : ?>
+                    <h2 class="int-panel-tag"><?php echo the_field('intro_subheading'); ?></h2>
+                <?php endif;
+                if ( get_field('intro_main_content') ) : ?>
+                    <?php echo the_field('intro_main_content'); ?>
+                <?php endif; ?>
             </section>
         </article>
         <article id="buy-lil-mojo" class="l-int-panel int-panel merch-panel">

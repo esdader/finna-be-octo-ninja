@@ -15,13 +15,18 @@
         
     <div class="l-main-content">
         <article id="brewin-up-some-tunes"class="l-int-panel int-panel-intro submit-song-panel">
-            <header>
-                <h1>BREWIN’ UP SOME TUNES</h1>
+            <header><?php
+                if ( get_field('intro_heading') ) : ?>
+                    <h1><?php echo the_field('intro_heading'); ?></h1>
+                <?php endif; ?>
             </header>
-            <section>
-                <h2 class="int-panel-tag">Here in Austin, music is in our blood.It’s also in our beer.</h2>
-                
-                <p>Liquid Austin Soul is more than just our brewery credo--it’s a stone cold pseudoscientific fact--carefully documented by a professionally unprofessional association of hop heads, groupies, audiophiles, and some dude who just walked by.  The tunes flow free around here, whatever we’re brewin’ or doin’.  And we want you to join the jam.  That’s right, we want you to write a song, man.  The more astute and less nearsighted among you may have noticed we print starter lyrics on every can.  Just take any of those lyrics and write yourself a song that uses ‘em.  Loud, funny, raunchy, poetic, profane, brief, long, punk, acapella…it’s up to you…all it’s gotta be is yours.</p>
+            <section><?php
+                if ( get_field('intro_subheading') ) : ?>
+                    <h2 class="int-panel-tag"><?php echo the_field('intro_subheading'); ?></h2>
+                <?php endif;
+                if ( get_field('intro_main_content') ) : ?>
+                    <?php echo the_field('intro_main_content'); ?>
+                <?php endif; ?>
             </section>
         </article>
         <article id="starter-lyrics" class="l-int-panel int-panel explain-song-panel-lyrics">

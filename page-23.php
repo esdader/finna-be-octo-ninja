@@ -26,12 +26,18 @@
         
     <div class="l-main-content">
         <article  id="long-way-to-top" class="l-int-panel events-tour-intro">
-            <header>
-                <h1>It’s a long way to the top, if you wanna rock’n’roll</h1>
+            <header><?php
+                if ( get_field('intro_heading') ) : ?>
+                    <h1><?php echo the_field('intro_heading'); ?></h1>
+                <?php endif; ?>
             </header>
-            <section>
-                <h2 class="events-tour-tag">When we’re not brewin’, come see what else we’re doin’.</h2>
-                <p>Bands gotta practice. And we gotta brew. So usually we’re canning and jamming behind closed doors. But when we’re not, we happily invite everyone in for regularly irregular hootenannies. Whether it’s a local band, a delightfully strange event, or some streaking comet that has yet to enter the stratosphere of our imagination. You can even schedule private brewery tours &amp; tastings. Just check our ever-evolving list of upcoming stuff &amp; shindigs. Failing that, ask any armadillo you happen to see waddling by. They usually seem to know where it’s at.</p>
+            <section><?php
+                if ( get_field('intro_subheading') ) : ?>
+                    <h2 class="events-tour-tag"><?php echo the_field('intro_subheading'); ?></h2>
+                <?php endif;
+                if ( get_field('intro_main_content') ) : ?>
+                    <?php echo the_field('intro_main_content'); ?>
+                <?php endif; ?>
             </section>
         </article>
         <article id="upcoming-stuff-and-shindigs" class="l-int-panel events-tour-panel int-panel">
