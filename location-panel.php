@@ -27,18 +27,31 @@
             </header>
             <div class="l-sidebar-panel-body">
                 <h4>info:</h4>
-                <p>We're hangin' out on East Saint Elmo in the ungentrified heart of South Austin. From downtown, go south on Congress past Ben White 71/290.  Turn left onto East Saint Elmo Road in about a 1/2 mile. The brewery is directly across the street from Music Lab studios. Look for the black A-frame sign on the right with white type that says "South Austin Brewery."  It's even got an arrow to point the way.  Easy as playin' chopsticks…</p>
-
+                <?php
+                    if ( get_field('contact_location', 'option') ) {
+                        the_field('contact_location', 'option');
+                    }
+                ?>
                 <h4>ADDRESS:</h4>
-                <p>415 E St Elmo Rd<br>
-                Austin, TX<br>
-                78745</p>
+                <p><?php if ( get_field('contact_address1', 'option') ) { the_field('contact_address1', 'option'); echo '<br>'; } ?>
+                <?php if ( get_field('contact_address2', 'option') ) { the_field('contact_address2', 'option'); echo '<br>'; } ?>
+                <?php if ( get_field('contact_city', 'option') ) { the_field('contact_city', 'option'); } if ( get_field('contact_st', 'option') ) { the_field('contact_st', 'option'); echo '<br>'; } ?>
+                <?php if ( get_field('contact_zip', 'option') ) { the_field('contact_zip', 'option'); } ?>
+                </p>
 
                 <h4>PHONE:</h4>
-                <p>512.354.BEER (2337)</p>
+                <p> <?php if ( get_field('contact_phone', 'option') ) { the_field('contact_phone', 'option'); } ?></p>
+                
+                <?php 
+                    if ( get_field('contact_email', 'option') ) {
+                        $contact_email = get_field('contact_email', 'option');
+                    }
 
-                <h4>EMAIL:</h4>
-                <p><a href="mailto:info@southaustinbrewery.com">info@southaustinbrewery.com</a>
+                    if ( isset($contact_email) ) : ?>
+
+                        <h4>EMAIL:</h4>
+                        <p><a href="mailto:<?php echo $contact_email; ?>"><?php echo $contact_email; ?></a>
+                    <?php endif; ?>
             </div>
             <header class="l-sidebar-panel-maps-header">
                 <h3 class="sidebar-maps-heady">
