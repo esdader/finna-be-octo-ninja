@@ -11,7 +11,7 @@ function starter_theme_scripts() {
 		'main', 
 		get_template_directory_uri() . '/css/main.css',
 		array(),
-		'1.1.1'
+		'1.1.2'
 	);
 
 	// mail chimp stylesheet
