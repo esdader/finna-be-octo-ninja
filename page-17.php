@@ -16,46 +16,44 @@
 <body <?php body_class(); ?>>
     
     <div class="l-home-container">
-    	<div class="l-home-inner-container">
-    		<nav class="l-homepage-nav">
-    			<ul class="homepage-nav">
-	                <li>
-	                    <a href="<?php echo get_page_link(19); ?>">
-	                        <?php echo get_the_title(19); ?>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="<?php echo get_page_link(21); ?>">
-	                        <?php echo get_the_title(21); ?>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="<?php echo get_page_link(23); ?>">
-	                        <?php echo get_the_title(23); ?>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="<?php echo get_page_link(25); ?>">
-	                        <?php echo get_the_title(25); ?>
-	                    </a>
-	                </li>
-	                <li class="last">
-	                    <a href="<?php echo get_page_link(27); ?>">
-	                        <?php echo get_the_title(27); ?>
-	                    </a>
-	                </li>
-	            </ul>
-    		</nav>
-    	</div>
+    	
     </div>
-
+    <div class="home-main-con clearfix">
+        <div class="l-home-inner-container clearfix">
+            <nav class="l-homepage-nav">
+                <ul class="homepage-nav">
+                    <li>
+                        <a href="<?php echo get_page_link(19); ?>">
+                            <?php echo get_the_title(19); ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_page_link(21); ?>">
+                            <?php echo get_the_title(21); ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_page_link(27); ?>">
+                            <?php echo get_the_title(27); ?>
+                        </a>
+                    </li>
+                    <li class="homepage-logo-con">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/homepage_logo.png" class="homepage-logo" alt="South Austin Brewery">
+                    </li>
+                    <li>
+                        <a href="<?php echo get_page_link(23); ?>">
+                            <?php echo get_the_title(23); ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_page_link(25); ?>">
+                            <?php echo get_the_title(25); ?>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <?php wp_footer(); ?>
-    
-    <script>
-        // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        // g.src='//www.google-analytics.com/ga.js';
-        // s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
 </body>
 </html>

@@ -1,28 +1,84 @@
-// homepage nav
+// homepage -- became all homepage
+
+.l-home-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../img/h_img_1.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.home-main-con {
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	left: 50%;
+	margin-left: -40%;
+	background: url(../img/home_box_bg.png) repeat left top;
+	z-index: 999;
+}
+
+.l-home-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .l-homepage-nav {
-	position: absolute;
-	top: 678px;
-	left: 30px;
+	position: relative;
+	top: 60%;
+	text-align: center;
 }
 
 .homepage-nav {
+	display: inline-block;
 	list-style: none;
-	padding: 0;
+	padding: 5em 1em 2em;
 	margin: 0;
+	background: url(../img/nav_bg.png) repeat left top;
 
 	li {
+		position: relative;
 		float: left;
-		margin-right: 44px;
+		margin: 0 12px;
+		line-height: 16px;
 
-		&.last {
-			margin-right: 0;
+		&:before {
+			display: block;
+			width: 16px;
+			height: 27px;
+			content: "";
+			position: absolute;
+			top: -42px;
+			left: 50%;
+			margin-left: -8px;
+			background: url(../img/menu_arrow.png) no-repeat center top;
 		}
+	}
+
+	.homepage-logo-con {
+		display: block;
+		width: 250px;
+		height: 16px;
+
+		&:before {
+			content: none;
+		}
+	}
+
+	.homepage-logo {
+		position: absolute;
+		max-width: 250px;
+		height: auto;
+		top: -164px;
+		left: 0;
 	}
 
 	a {
 		color: #fff;
-		font: normal normal $heading-family-bold 22px/42px $heading-family;
+		font: normal normal $heading-family-bold 16px/1 $heading-family;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 
