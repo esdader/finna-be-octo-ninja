@@ -9,41 +9,53 @@
 }
 
 .home-main-con {
-	position: absolute;
-	width: 80%;
-	height: 90%;
-	left: 50%;
-	margin-left: -40%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 3%;
+	width: 1125px;
 	background: url(../img/home_box_bg.png) repeat left top;
-	z-index: 999;
 }
 
 .l-home-inner-container {
     position: relative;
-    width: 100%;
+    width: 1050px;
     height: 100%;
-    margin: 0 auto;
+    margin: 8em auto 0;
+    padding-bottom: 12em;
     text-align: center;
 }
 
 .l-homepage-nav {
 	position: relative;
-	top: 60%;
-	text-align: center;
+	padding: 2em 3% 1em;
+	background: url(../img/nav_bg.png) repeat left top;
 }
 
+.homepage-nav-group {
+	position: relative;
+	padding-top: .25em;
+	border-top: 1px solid #b08458;
+	&.group-one {
+		float: left;
+	}
+
+	&.group-two {
+		float: right;
+	}
+}
 .homepage-nav {
-	display: inline-block;
+	position: relative;
 	list-style: none;
-	padding: 5em 1em 2em;
 	margin: 0;
-	background: url(../img/nav_bg.png) repeat left top;
+	padding: 0;
+	
 
 	li {
 		position: relative;
 		float: left;
-		margin: 0 12px;
 		line-height: 16px;
+		border-top: 1px solid #b08458;
+		padding-top: 2em;
 
 		&:before {
 			display: block;
@@ -51,29 +63,11 @@
 			height: 27px;
 			content: "";
 			position: absolute;
-			top: -42px;
+			top: -12px;
 			left: 50%;
-			margin-left: -8px;
+			margin-left: -20px;
 			background: url(../img/menu_arrow.png) no-repeat center top;
 		}
-	}
-
-	.homepage-logo-con {
-		display: block;
-		width: 250px;
-		height: 16px;
-
-		&:before {
-			content: none;
-		}
-	}
-
-	.homepage-logo {
-		position: absolute;
-		max-width: 250px;
-		height: auto;
-		top: -164px;
-		left: 0;
 	}
 
 	a {
@@ -81,9 +75,48 @@
 		font: normal normal $heading-family-bold 16px/1 $heading-family;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		margin: 0 24px 0 0;
 
 		&:hover {
 			text-decoration: underline;
 		}
 	}
+}
+
+.homepage-logo {
+	position: absolute;
+	width: 240px;
+	height: auto;
+	left: 50%;
+	margin-left: -140px;
+	top: -102px;
+}
+
+.group-two .homepage-nav { 
+	li {
+		text-align: right;
+
+		&:before {
+			left: auto;
+			right: 50%;
+			margin-left: 0;
+			margin-right: -20px;
+
+		}
+	}
+	a {
+		margin: 0 0 0 24px;
+	}
+}
+
+@media (max-width: 1122px) {
+	.l-home-inner-container {
+		width: 966px;
+	}
+
+	.homepage-logo {
+		width: 160px;
+		margin-left: -80px;
+		top: -44px;
+	}	
 }

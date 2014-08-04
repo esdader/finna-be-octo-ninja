@@ -20,37 +20,41 @@
     </div>
     <div class="home-main-con clearfix">
         <div class="l-home-inner-container clearfix">
-            <nav class="l-homepage-nav">
-                <ul class="homepage-nav">
-                    <li>
-                        <a href="<?php echo get_page_link(19); ?>">
-                            <?php echo get_the_title(19); ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo get_page_link(21); ?>">
-                            <?php echo get_the_title(21); ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo get_page_link(27); ?>">
-                            <?php echo get_the_title(27); ?>
-                        </a>
-                    </li>
-                    <li class="homepage-logo-con">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/homepage_logo.png" class="homepage-logo" alt="South Austin Brewery">
-                    </li>
-                    <li>
-                        <a href="<?php echo get_page_link(23); ?>">
-                            <?php echo get_the_title(23); ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo get_page_link(25); ?>">
-                            <?php echo get_the_title(25); ?>
-                        </a>
-                    </li>
-                </ul>
+            <nav class="l-homepage-nav clearfix">
+                <div class="homepage-nav-group group-one">
+                    <ul class="homepage-nav clearfix">
+                        <li>
+                            <a href="<?php echo get_page_link(19); ?>">
+                                <?php echo get_the_title(19); ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo get_page_link(21); ?>">
+                                <?php echo get_the_title(21); ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo get_page_link(27); ?>">
+                                <?php echo get_the_title(27); ?>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="homepage-nav-group group-two">
+                    <ul class="homepage-nav clearfix">
+                        <li>
+                            <a href="<?php echo get_page_link(23); ?>">
+                                <?php echo get_the_title(23); ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo get_page_link(25); ?>">
+                                <?php echo get_the_title(25); ?>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="<?php bloginfo('template_directory'); ?>/img/homepage_logo.png" class="homepage-logo" alt="South Austin Brewery">
             </nav>
         </div>
     </div>
