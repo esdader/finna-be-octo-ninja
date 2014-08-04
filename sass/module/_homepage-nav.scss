@@ -11,7 +11,7 @@
 .home-main-con {
 	position: relative;
 	margin: 0 auto;
-	padding: 0 3%;
+	padding-bottom: 5em;
 	width: 1125px;
 	background: url(../img/home_box_bg.png) repeat left top;
 }
@@ -20,8 +20,7 @@
     position: relative;
     width: 1050px;
     height: 100%;
-    margin: 8em auto 0;
-    padding-bottom: 12em;
+    margin: 8em auto 12em;
     text-align: center;
 }
 
@@ -88,7 +87,7 @@
 	width: 240px;
 	height: auto;
 	left: 50%;
-	margin-left: -140px;
+	margin-left: -136px;
 	top: -102px;
 }
 
@@ -109,14 +108,192 @@
 	}
 }
 
+.l-sign-up {
+	width: 100%;
+	padding: 1em 1.5em 1em;
+	margin-top: .5em;
+	background: url(../img/sign_up_bg.png) repeat left top;
+}
+
+.l-homepage-signup-intro {
+	margin-bottom: .25em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #fff;
+}
+
+
+.signup-heady-col {
+	float: left;
+	width: 220px;
+	background: url(../img/record.png) no-repeat left 14px;
+
+	.sidebar-panel-heady {
+		margin: 0;
+		font-size: 40px;
+		line-height: 1;
+		padding: 10px 0 0 50px;
+		text-align: left;
+	}
+}
+
+.signup-body-col {
+	float: right;
+	width: 300px;
+
+	p {
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $heading-family;
+		font-weight: $heading-family-bold;
+		font-size: 14px;
+		color: #fff;
+		letter-spacing: 1px;
+	}
+}
+
+.l-homepage-signup {
+
+	#mce-EMAIL {
+		float: left;
+		width: 326px;
+	}
+	
+	.sub-holder {
+		float: right;
+		width: 226px;
+		text-align: center;	
+		background: url(../img/button_arrows_bg.png) no-repeat center center;
+	}
+
+	#mc-embedded-subscribe {
+		width: 180px;
+		margin-top: 0;
+		margin: 0 auto;
+		background-color: #fff;
+		color: #b08458;
+		height: 22px;
+		line-height: 22px;
+		font-weight: bold;
+		border-radius: 6px;
+
+		&:hover {
+			color: #50757a;
+		}
+	}
+}
+
+
+.l-social-media-signup {
+	width: 614px;
+	margin: 0 auto;
+	min-height: 6em;
+}
+
+.homepage-social-media {
+	a {
+		color: #fff;
+		text-decoration: none;
+		font-family: $heading-family;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 35px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.homepage-instagram {
+		float: right;
+	}
+
+	.homepage-facebook {
+		margin-right: 160px;
+	}
+}
+
+.social-media-icon {
+	display: inline-block;
+	width: 	28px;
+	height: 35px;
+	margin-right: 1em;
+	background-image: url(../img/social_media_icons.png);
+	background-repeat: none;
+	vertical-align: top;
+
+	.facebook {
+		background-position: 0 0;
+	}
+
+	.twitter {
+		background-position: -47px 0;
+	}
+
+	.instagram {
+		background-position: -98px 0;
+	}
+}
+
 @media (max-width: 1122px) {
 	.l-home-inner-container {
 		width: 966px;
 	}
+	
+	.home-main-con {
+		width: 1050px;
+	}
 
 	.homepage-logo {
 		width: 160px;
-		margin-left: -80px;
+		margin-left: -100px;
 		top: -44px;
 	}	
+}
+
+@media (max-width: 1050px) {
+
+	.l-home-container {
+		min-width: 860px;
+		max-width: 1050px;
+	}
+
+	.l-home-inner-container {
+		margin-top: 9em;
+		width: 800px;
+	}
+
+	.home-main-con {
+		width: 860px;
+	}
+
+	.homepage-logo {
+		top: -130px;
+		margin-left: -80px;
+	}
+}
+
+.l-homepage-holder {
+	min-height: 1200px;
+}
+
+
+.lt-ie9 {
+	.l-home-container {
+		min-width: 860px;
+	}
+
+	.l-home-inner-container {
+		margin-top: 9em;
+		width: 820px;
+	}
+
+	.home-main-con {
+		width: 860px;
+	}
+
+	.homepage-logo {
+		width: 160px;
+		top: -130px;
+		margin-left: -80px;
+	}
 }

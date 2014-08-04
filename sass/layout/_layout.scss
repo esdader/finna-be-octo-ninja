@@ -79,3 +79,11 @@
     padding-top: 80px;
 }
 
+.l-horizontal-nav {
+    list-style: none;
+    padding: 0;
+
+    li {
+        float: left;
+    }
+}
