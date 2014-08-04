@@ -15,8 +15,14 @@
 </head>
 <body <?php body_class(); ?>>
 <div class="l-homepage-holder">
-    <div class="l-home-container">
-        	
+    <div class="l-homepage-container">
+        <div id="owl-demo" class="owl-carousel owl-theme l-homepage-container">     
+            <div class="item item-1"><img src="<?php bloginfo('template_directory'); ?>/img/h_img_1.jpg" alt=""></div>
+            <div class="item item-2"><img src="<?php bloginfo('template_directory'); ?>/img/h_img_2.jpg" alt=""></div>
+            <div class="item item-3"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_3.jpg" alt=""></div>
+            <div class="item item-4"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_4.jpg" alt=""></div>
+            <div class="item item-5"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_5.jpg" alt=""></div>
+        </div>
     </div>
     <div class="home-main-con clearfix">
         <div class="l-home-inner-container clearfix">
@@ -108,5 +114,22 @@
     </div>
 </div>
     <?php wp_footer(); ?>
+    <script>
+        $(document).ready(function() {
+         
+            $("#owl-demo").owlCarousel({
+
+                navigation : false, // Show next and prev buttons
+                slideSpeed : 3000,
+                paginationSpeed : 600,
+                singleItem:true,
+                transitionStyle : "fade",
+                pagination: false,
+                autoPlay: true,
+                lazyLoad: true
+            });
+         
+        });
+    </script>
 </body>
 </html>
