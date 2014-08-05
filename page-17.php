@@ -115,6 +115,7 @@
 </div>
     <?php wp_footer(); ?>
     <script>
+        SouthAustinBrewery.init();
         $(document).ready(function() {
 
             $('.bg-carousel').slick({
