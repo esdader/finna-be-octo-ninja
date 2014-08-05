@@ -16,12 +16,12 @@
 <body <?php body_class(); ?>>
 <div class="l-homepage-holder">
     <div class="l-homepage-container">
-        <div id="owl-demo" class="owl-carousel owl-theme l-homepage-container">     
-            <div class="item item-1"><img src="<?php bloginfo('template_directory'); ?>/img/h_img_1.jpg" alt=""></div>
-            <div class="item item-2"><img src="<?php bloginfo('template_directory'); ?>/img/h_img_2.jpg" alt=""></div>
-            <div class="item item-3"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_3.jpg" alt=""></div>
-            <div class="item item-4"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_4.jpg" alt=""></div>
-            <div class="item item-5"><img  class="lazyOwl" data-src="<?php bloginfo('template_directory'); ?>/img/h_img_5.jpg" alt=""></div>
+        <div class="bg-carousel">     
+            <div class="item item-1"><img class="item-img" src="<?php bloginfo('template_directory'); ?>/img/h_img_1.jpg" alt=""></div>
+            <div class="item item-2"><img class="item-img" src="<?php bloginfo('template_directory'); ?>/img/h_img_2.jpg" alt=""></div>
+            <div class="item item-3"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_3.jpg" alt=""></div>
+            <div class="item item-4"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_4.jpg" alt=""></div>
+            <div class="item item-5"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_5.jpg" alt=""></div>
         </div>
     </div>
     <div class="home-main-con clearfix">
@@ -116,17 +116,17 @@
     <?php wp_footer(); ?>
     <script>
         $(document).ready(function() {
-         
-            $("#owl-demo").owlCarousel({
 
-                navigation : false, // Show next and prev buttons
-                slideSpeed : 3000,
-                paginationSpeed : 600,
-                singleItem:true,
-                transitionStyle : "fade",
-                pagination: false,
-                autoPlay: true,
-                lazyLoad: true
+            $('.bg-carousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                lazyLoad: 'ondemand',
+                autoplay: true,
+                pauseOnHover: false,
+                arrows: false
             });
          
         });
