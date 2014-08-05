@@ -11,6 +11,7 @@ SouthAustinBrewery = {
         self.imageWidth  = 0;
         self.slideImage  = $('.item-img');
         self.slideHolder = $('.item');
+        self.homepageCon = $('.l-homepage-container');
 
         if (!Modernizr.touch) {
             self.scaleLayout();
@@ -24,8 +25,8 @@ SouthAustinBrewery = {
     findLayout: function () {
         var self = this;
 
-        self.winHeight = $(window).height();
-        self.winWidth  = $(window).width();
+        self.winHeight = self.homepageCon.height();
+        self.winWidth  = self.homepageCon.width();
         self.aspectRatio = self.winWidth / self.winHeight;
     },
 

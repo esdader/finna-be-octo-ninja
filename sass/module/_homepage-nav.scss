@@ -1,6 +1,10 @@
 // homepage -- became all homepage
+body.page-id-17 {
+	background: #999 url(../img/h_img_1.jpg) no-repeat left top;
+	background-size: cover;
+}
 
-.l-home-container {
+.l-homepage-container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -12,6 +16,7 @@
 	padding-bottom: 5em;
 	width: 1125px;
 	background: url(../img/home_box_bg.png) repeat left top;
+	z-index: 9999;
 }
 
 .l-home-inner-container {
