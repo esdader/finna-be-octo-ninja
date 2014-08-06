@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width"> -->
     <script type="text/javascript" src="//use.typekit.net/xwy8mif.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php wp_head(); ?>

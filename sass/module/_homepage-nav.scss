@@ -4,26 +4,33 @@ body.page-id-17 {
 	background-size: cover;
 }
 
+.l-homepage-holder {
+	width: 920px;
+	margin: 0 auto;
+}
+
 .l-homepage-container {
     position: fixed;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
 }
 
 .home-main-con {
 	position: relative;
 	margin: 0 auto;
 	padding-bottom: 5em;
-	width: 1125px;
+	width: 860px;
 	background: url(../img/home_box_bg.png) repeat left top;
 	z-index: 9999;
 }
 
 .l-home-inner-container {
     position: relative;
-    width: 1050px;
+    width: 800px;
     height: 100%;
-    margin: 8em auto 12em;
+    margin: 9em auto 12em;
     text-align: center;
 }
 
@@ -87,11 +94,11 @@ body.page-id-17 {
 
 .homepage-logo {
 	position: absolute;
-	width: 240px;
+	width: 160px;
 	height: auto;
 	left: 50%;
-	margin-left: -136px;
-	top: -102px;
+	margin-left: -80px;
+	top: -130px;
 }
 
 .group-two .homepage-nav { 
@@ -237,47 +244,10 @@ body.page-id-17 {
 	}
 }
 
-@media (max-width: 1122px) {
-	.l-home-inner-container {
-		width: 966px;
-	}
-	
-	.home-main-con {
-		width: 1050px;
-	}
 
-	.homepage-logo {
-		width: 160px;
-		margin-left: -100px;
-		top: -44px;
-	}	
-}
-
-@media (max-width: 1050px) {
-
-	.l-home-container {
-		min-width: 860px;
-		max-width: 1050px;
-	}
-
-	.l-home-inner-container {
-		margin-top: 9em;
-		width: 800px;
-	}
-
-	.home-main-con {
-		width: 860px;
-	}
-
-	.homepage-logo {
-		top: -130px;
-		margin-left: -80px;
-	}
-}
-
-.l-homepage-holder {
-	min-height: 1200px;
-}
+// .l-homepage-holder {
+// 	min-height: 1200px;
+// }
 
 
 .lt-ie9 {
