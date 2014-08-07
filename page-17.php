@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="width=960">
     <script type="text/javascript" src="//use.typekit.net/xwy8mif.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php wp_head(); ?>
@@ -85,7 +85,7 @@
                         </li>
                     </ul>    
             </div>
-            <div class="l-sign-up clearfix">
+            <!-- <div class="l-sign-up clearfix">
                 <div class="l-homepage-signup-intro clearfix">
                     <div class="signup-heady-col">
                         <h3 class="sidebar-panel-heady">
@@ -97,19 +97,16 @@
                     </div>
                 </div>
                 <div class="l-homepage-signup">
-                <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
                         <form action="http://southaustinbrewery.us8.list-manage2.com/subscribe/post?u=4f7e2ddb7e4f8b58703949b51&amp;id=6d82de8886" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <label for="mce-EMAIL" class="visuallyhidden">Sign me up for the latest news.</label>
                             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address." required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_4f7e2ddb7e4f8b58703949b51_6d82de8886" tabindex="-1" value=""></div>
                             <div class="sub-holder"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                         </form>
                     </div>
-                <!--End mc_embed_signup-->
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
