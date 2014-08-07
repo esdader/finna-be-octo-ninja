@@ -65,24 +65,24 @@
         <div class="l-social-media-signup">
             <div class="homepage-social-media clearfix">
                 <ul class="l-horizontal-nav">
-                        <li class="homepage-facebook">
-                            <a href="https://www.facebook.com/SouthAustinBrewery">
-                                <span class="social-media-icon facebook ir"> </span>Facebook
-                            </a>
-                        </li>
-                        <li class="homepage-twitter">
-                            <a href="https://twitter.com/SABrewery">
-                                <span class="social-media-icon twitter ir"> </span>
-                                Twitter
-                            </a>
-                        </li>
-                        <li class="homepage-instagram">
-                            <a href="http://instagram.com/southaustinbrewery">
-                                <span class="social-media-icon instagram ir"> </span>
-                                Instagram
-                            </a>
-                        </li>
-                    </ul>    
+                    <li class="homepage-facebook">
+                        <a href="https://www.facebook.com/SouthAustinBrewery">
+                            <span class="social-media-icon facebook ir"> </span>Facebook
+                        </a>
+                    </li>
+                    <li class="homepage-twitter">
+                        <a href="https://twitter.com/SABrewery">
+                            <span class="social-media-icon twitter ir"> </span>
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="homepage-instagram">
+                        <a href="http://instagram.com/southaustinbrewery">
+                            <span class="social-media-icon instagram ir"> </span>
+                            Instagram
+                        </a>
+                    </li>
+                </ul>    
             </div>
         </div>
     </div>
