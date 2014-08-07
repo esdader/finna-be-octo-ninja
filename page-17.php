@@ -21,7 +21,6 @@
             <div class="item item-2"><img class="item-img" src="<?php bloginfo('template_directory'); ?>/img/h_img_2.jpg" alt=""></div>
             <div class="item item-3"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_3.jpg" alt=""></div>
             <div class="item item-4"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_4.jpg" alt=""></div>
-            <div class="item item-5"><img class="item-img" data-lazy="<?php bloginfo('template_directory'); ?>/img/h_img_5.jpg" alt=""></div>
         </div>
     </div>
     <div class="home-main-con clearfix">
@@ -85,28 +84,6 @@
                         </li>
                     </ul>    
             </div>
-            <!-- <div class="l-sign-up clearfix">
-                <div class="l-homepage-signup-intro clearfix">
-                    <div class="signup-heady-col">
-                        <h3 class="sidebar-panel-heady">
-                            Sign Up!
-                        </h3>
-                    </div>
-                    <div class="signup-body-col">
-                        <p>enter your email address below to join our newsletter for all the LATEST NEWS &amp; events.</p>
-                    </div>
-                </div>
-                <div class="l-homepage-signup">
-                    <div id="mc_embed_signup">
-                        <form action="http://southaustinbrewery.us8.list-manage2.com/subscribe/post?u=4f7e2ddb7e4f8b58703949b51&amp;id=6d82de8886" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <label for="mce-EMAIL" class="visuallyhidden">Sign me up for the latest news.</label>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address." required>
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_4f7e2ddb7e4f8b58703949b51_6d82de8886" tabindex="-1" value=""></div>
-                            <div class="sub-holder"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>

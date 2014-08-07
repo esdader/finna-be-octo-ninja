@@ -20,7 +20,7 @@ body.page-id-17 {
 .home-main-con {
 	position: relative;
 	margin: 0 auto;
-	padding-bottom: 5em;
+	padding-bottom: 4em;
 	width: 860px;
 	background: url(../img/home_box_bg.png) repeat left top;
 	z-index: 9999;
@@ -30,7 +30,7 @@ body.page-id-17 {
     position: relative;
     width: 800px;
     height: 100%;
-    margin: 9em auto 12em;
+    margin: 14em auto 14em;
     text-align: center;
 }
 
@@ -161,42 +161,9 @@ body.page-id-17 {
 	}
 }
 
-.l-homepage-signup {
-
-	#mce-EMAIL {
-		float: left;
-		width: 326px;
-	}
-	
-	.sub-holder {
-		float: right;
-		width: 226px;
-		text-align: center;	
-		background: url(../img/button_arrows_bg.png) no-repeat center center;
-	}
-
-	#mc-embedded-subscribe {
-		width: 180px;
-		margin-top: 0;
-		margin: 0 auto;
-		background-color: #fff;
-		color: #b08458;
-		height: 22px;
-		line-height: 22px;
-		font-weight: bold;
-		border-radius: 6px;
-
-		&:hover {
-			color: #50757a;
-		}
-	}
-}
-
-
 .l-social-media-signup {
 	width: 614px;
 	margin: 0 auto;
-	min-height: 6em;
 }
 
 .homepage-social-media {
