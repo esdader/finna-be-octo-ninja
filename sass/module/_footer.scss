@@ -1,0 +1,206 @@
+// main footer
+.l-main-footer {
+    width: 100%;
+    clear: both;
+}
+
+.footer-nav-heady {
+    margin: 0 1.25em 0 0;
+    float: left;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: $heading-family-alt;
+    color: #ccc5be;
+}
+
+.l-footer-nav {
+    .l-horizontal-nav {
+        float: left;
+        margin: 0;
+    }
+
+    .social-media-icon {
+        display: inline-block;
+        width:  28px;
+        height: 35px;
+        margin-right: 1em;
+        background-image: url(../img/sprite.png);
+        background-repeat: no-repeat;
+        vertical-align: top;
+    }
+
+    a {
+        color: #ccc5be;
+        font-size: 14px;
+        line-height: 35px;
+        font-family: $heading-family;
+        text-transform: uppercase;
+    }
+
+    li {
+        margin-right: 2.5em;
+    }
+}
+
+.footer-facebook {
+    .facebook {
+        background-position: 0 -87px;    
+    }
+    
+}
+
+.footer-twitter {
+    .twitter {
+        background-position: -43px -87px;        
+    }
+    
+}
+
+.footer-instagram {
+    .instagram {
+        background-position: -86px -87px;    
+    }
+}
+
+.page-id-19 {
+    .l-footer-nav {
+        a:hover {
+            color: #fab201;
+        }
+    }
+
+    .footer-facebook:hover {
+        .facebook {
+            background-position: 0 -240px;    
+        }
+        
+    }
+
+    .footer-twitter:hover {
+        .twitter {
+            background-position: -43px -240px;        
+        }
+        
+    }
+
+    .footer-instagram:hover {
+        .instagram {
+            background-position: -86px -240px;    
+        }
+    }
+}
+
+.page-id-21 {
+    .l-footer-nav {
+        a:hover {
+            color: #74959c;
+        }
+    }
+
+    .footer-facebook:hover {
+        .facebook {
+            background-position: 0 -291px;    
+        }
+        
+    }
+
+    .footer-twitter:hover {
+        .twitter {
+            background-position: -43px -291px;        
+        }
+        
+    }
+
+    .footer-instagram:hover {
+        .instagram {
+            background-position: -86px -291px;    
+        }
+    }
+}
+
+.page-id-23 {
+    .l-footer-nav {
+        
+        li:hover a,
+        a:hover {
+            color: #90b058;
+        }
+    }
+
+    .footer-facebook:hover {
+        .facebook {
+            background-position: 0 -189px;    
+        }
+        
+    }
+
+    .footer-twitter:hover {
+        .twitter {
+            background-position: -43px -189px;        
+        }
+        
+    }
+
+    .footer-instagram:hover {
+        .instagram {
+            background-position: -86px -189px;    
+        }
+    }
+}
+
+.page-id-25 {
+    .l-footer-nav {
+        a:hover {
+            color: #40182f;
+        }
+    }
+
+    .footer-facebook:hover {
+        .facebook {
+            background-position: 0 -138px;    
+        }
+        
+    }
+
+    .footer-twitter:hover {
+        .twitter {
+            background-position: -43px -138px;        
+        }
+        
+    }
+
+    .footer-instagram:hover {
+        .instagram {
+            background-position: -86px -138px;    
+        }
+    }
+}
+
+
+.page-id-27 {
+    .l-footer-nav {
+        a:hover {
+            color: #b3d4fc;
+        }
+    }
+
+    .footer-facebook:hover {
+        .facebook {
+            background-position: 0 -342px;    
+        }
+        
+    }
+
+    .footer-twitter:hover {
+        .twitter {
+            background-position: -43px -342px;        
+        }
+        
+    }
+
+    .footer-instagram:hover {
+        .instagram {
+            background-position: -86px -342px;    
+        }
+    }
+}
