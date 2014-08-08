@@ -20,6 +20,10 @@
 	&:first-child:before {
 		content: none;
 	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .beer-info {

@@ -21,6 +21,14 @@
                 </li>
             </ul> 
         </div>
+        <div class="l-copyright">
+            <div class="record-icon">
+                
+            </div>
+            <div class="copyright-block">
+                &copy; <?php echo date('Y'); ?> South Austin Brewery <br>All Rights Reserved
+            </div>
+        </div>
     </footer>
     </div> <?php // ends l-container ?>
     <?php wp_footer(); ?>

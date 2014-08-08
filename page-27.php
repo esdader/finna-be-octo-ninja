@@ -42,14 +42,10 @@
         <article id="buy-lil-mojo" class="l-int-panel int-panel merch-panel">
             <section>
                 <p>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/balck_T_2.jpg" alt="" class="merch-photo" />
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/baseball_T_2.jpg" alt="" class="merch-photo" />
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/baseball_T_3.jpg" alt="" class="merch-photo" />
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/hat_2.jpg" alt="" class="merch-photo" />
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/hat_3.jpg" alt="" class="merch-photo" />
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/ringer.jpg" alt="" class="merch-photo" />
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/ringer2.jpg" alt="" class="merch-photo" />
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/merch-smaller/glass.jpg" alt="" class="merch-photo" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/balck_T_2.jpg" alt="" class="merch-photo" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/baseball_T_3.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ringer.jpg" alt="" class="merch-photo" />
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hat_2.jpg" alt="" class="merch-photo" />
                 </p>
             </section>
         </article>
