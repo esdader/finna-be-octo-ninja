@@ -96,15 +96,11 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 /**
  * Add image size
- * 
- * example if needed
- * not active by default because WordPress will save images in the example sizes
  */
 
-// if ( function_exists( 'add_image_size' ) ) { 
-// 	add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
-// 	add_image_size( 'homepage-thumb', 220, 180, true ); //(cropped)
-// }
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'full-column', 631, 9999 );
+}
 
 
 /**

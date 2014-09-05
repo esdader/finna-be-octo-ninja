@@ -36,6 +36,11 @@
 	li {
 		letter-spacing: 1px;
 	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 .int-panel-intro.submit-song-panel {
@@ -83,6 +88,19 @@
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 2px;
+}
+
+.event-hero {
+	margin-bottom: 1.4em;
+
+	&.first-panel {
+		margin-top: 1em;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 

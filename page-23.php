@@ -52,22 +52,59 @@
                 <?php endif; ?>
             </section>
         </article>
-        <article id="upcoming-stuff-and-shindigs" class="l-int-panel events-tour-panel int-panel">
-            <header>
-                <h1>Upcoming Stuff and Shindigs</h1>
-            </header>
-            <h2 class="events-tour-tag">Meet the Brewer Happy Hour</h2>
-            <p>DATE: Fridays 5-8pm -- May 30, June 6, June 13</p>
-            <p>Come on by and shake the hands that crafted the beer that has fans screaming for more. Our brewing maestros Eric and Russ will be hanging out, answering questions, and—if you’re really obsessed—signing autographs (but only if you ask nicely). There will be live bands serving up locally crafted tunes. And, of course, we’ll be serving our locally crafted beers. No cover. But be cool and please tip the band.</p>
-        </article>
+        <?php
+            $args = array(
+                        'post_type' => 'events',
+                        'orderby' => 'menu_order'
+                    );
+            $events = new WP_Query($args);
+            $count = 1;
+        if ( $events->have_posts() ) : while ( $events->have_posts() ) : $events->the_post(); ?>
+            <?php if ($count > 1 ): ?>
+                <article id="upcoming-stuff-and-shindigs" class="l-int-panel events-tour-panel int-panel">
+                    <?php if ( has_post_thumbnail() ) : ?>
+                        <div class="event-hero">
+                            <?php the_post_thumbnail('full-column'); ?>    
+                        </div>
+                    <?php endif; ?>
+                    <h2 class="events-tour-tag"><?php the_title(); ?></h2>
+                    <p>DATE: <?php the_field('event_date'); ?></p>
+                    <?php the_field('event_details'); ?>
+                </article>
+            <?php else: ?>
+                <article id="upcoming-stuff-and-shindigs" class="l-int-panel events-tour-panel int-panel">
+                    <header>
+                        <h1>Upcoming Stuff and Shindigs</h1>
+                    </header>
+                    <?php if ( has_post_thumbnail() ) : ?>
+                        <div class="event-hero first-panel">
+                            <?php the_post_thumbnail('full-column'); ?>    
+                        </div>
+                    <?php endif; ?>
+                    <h2 class="events-tour-tag"><?php the_title(); ?></h2>
+                    <p>DATE: <?php the_field('event_date'); ?></p>
+                    <?php the_field('event_details'); ?>
+                </article>
+            <?php 
+                endif;
+                $count++;
+            ?>
+        <?php endwhile; ?>
+        <?php else: ?>
+            <article id="upcoming-stuff-and-shindigs" class="l-int-panel events-tour-panel int-panel">
+                <header>
+                    <h1>Upcoming Stuff and Shindigs</h1>
+                </header>
+                <h2 class="events-tour-tag">No events at this time. Check back soon!</h2>
+            </article>
+        <?php endif; ?>
+
         <article id="tours" class="l-int-panel events-tour-panel int-panel">
             <header>
                 <h1>Tours</h1>
             </header>
             <section>
-                <p>Austin was a lot thirstier than we thought. We’ve had to postpone our as yet unscheduled brewery tours due to popular demand. Right now, every second we can spare is spent brewing every drop we can.</p>
-
-                <p>As soon as we get caught up, we’ll get a regular tour schedule going. No need to camp out for tickets. Just follow us on Facebook and twitter and you’ll be the first to know.</p>
+                <?php the_field('event_tour_copy', 23); ?>
             </section>
         </article>
         <article id="book-your-event" class="l-int-panel events-tour-panel int-panel">
@@ -75,9 +112,7 @@
                 <h1>Book Your Private Event</h1>
             </header>
             <section>
-                <p>So you’re having a little get together. Or maybe you’re having a big get together. Make it memorable and get your collective brew on, South Austin style. Featuring a uniquely funky Austin industrial vibe and fresh craft beers straight from the source—this ain’t your typical birthday-corporate shindig-wedding reception-ground hog day-album release party-leap year celebration. As a true working brewery, dates are limited and fill up fast. Call for details and book your event today. Or tomorrow. (We’re mellow like that.)</p>
-                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/event1.jpg" alt="" /></p>
-                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/event2.jpg" alt="" /></p>
+                <?php the_field('event_book_copy', 23); ?>
             </section>
         </article>
     </div>    
